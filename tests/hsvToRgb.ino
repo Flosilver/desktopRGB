@@ -80,6 +80,6 @@ void hsvToRgb2(double h, double s, double v, int* r, int* g, int* b) {
 }
 
 double modulo(double n, double mod) {
-  if (n < 2) return n;
+  if (n < mod) return n;
   else return modulo(n-mod, mod);
 }
